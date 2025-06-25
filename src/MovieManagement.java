@@ -92,7 +92,7 @@ public class MovieManagement {
             updateMovie.setDirector(movie.getDirector());
             updateMovie.setYear(movie.getYear());
 
-            boolean isExist = false;
+            boolean isExist = true;
             do {
                 System.out.println("""
                         ==============UPDATE MOVIE============
@@ -117,7 +117,7 @@ public class MovieManagement {
                         updateMovie.setYear(Integer.parseInt(scanner.nextLine()));
                         break;
                     case 4:
-                        isExist = true;
+                        isExist = false;
                         break;
                     default:
                         System.err.println("Invalid choice");
